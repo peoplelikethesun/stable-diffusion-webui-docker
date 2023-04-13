@@ -1,3 +1,17 @@
+ ###################新增Docker构建Stable-Diffusion-Webui####################
+    下载项目仓库
+	git clone https://github.com/peoplelikethesun/stable-diffusion-webui-docker.git
+	
+	进入项目的目录：
+	cd stable-diffusion-webui-docker
+	    
+	接着运行命令下载相关的依赖镜像
+	docker compose --profile download up --build
+	
+	下载完成后，运行命令构建容器
+	docker compose --profile auto up --build -d
+############################################################################
+
 # Stable Diffusion WebUI Docker
 
 Run Stable Diffusion on your machine with a nice UI without any hassle!
